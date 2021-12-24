@@ -3,11 +3,10 @@ version: "3.8"
 services:
   Heliotrope:
     container_name: Heliotrope
-    build: ./
+    image: ghcr.io/saebasol/heliotrope:latest
     restart: always
     expose:
       - 8000
-      - 8001
     networks:
       - saebasol
 

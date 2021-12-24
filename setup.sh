@@ -86,8 +86,7 @@ apt-get install linux-xanmod -y
 # Setup acme.sh
 sudo -u $sbs_subuser \
   curl https://get.acme.sh | sh -s email=$sbs_email && \
-  ~/.acme.sh/acme.sh --issue --dns dns_cf -d doujinshiman.ga -d beta.doujinshiman.ga
-
+  ~/.acme.sh/acme.sh --issue --dns dns_cf -d api.saebasol.org
 echo "export CF_Key=\"$sbs_cf_key\"" >> $sbs_subuser_home/.acme.sh/account.conf
 echo "export CF_Email=\"$sbs_email\"" >> $sbs_subuser_home/.acme.sh/account.conf
 
