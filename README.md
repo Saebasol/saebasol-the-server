@@ -10,11 +10,11 @@ Automated server configuration script of Heliotrope.
 
 # Usage
 
-After preparing a bare metal server, clone this repository and edit `config.sh`, then execute `setup/initial-setup.sh`.
+After preparing a bare metal server, clone this repository and edit `config.sh`, then execute `setup.sh`.
 
 ```bash
-git clone https://github.com/seia-soto/saebasol-the-server.git install
+git clone https://github.com/Saebasol/saebasol-the-server.git install
 cd install
-vi config.sh
+nano config.sh
 sudo bash setup.sh
 ```
